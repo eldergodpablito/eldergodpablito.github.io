@@ -2,10 +2,89 @@
     <head>
         <title>Webpage</title>
         <meta charset="utf-8">
+        
+ 
+        <style type=”text/css”>
+        .menutitle{
+        cursor:pointer;
+        margin-bottom: 5px;
+        background-color:#ECECFF;
+        color:#000000;
+        width:140px;
+        padding:2px;
+        text-align:center;
+        font-weight:bold;
+        /*/*/border:1px solid #000000;/* */
+        }.submenu{
+        margin-bottom: 0.5em;
+        }
+        </style><script type=”text/javascript”>/***********************************************
+        * Switch Menu script- by Martial B of http://getElementById.com/
+        * Modified by Dynamic Drive for format & NS4/IE4 compatibility
+        * Visit http://www.dynamicdrive.com/ for full source code
+        ***********************************************/var persistmenu=”yes” //”yes” or “no”. Make sure each SPAN content contains an incrementing ID starting at 1 (id=”sub1″, id=”sub2″, etc)
+        var persisttype=”sitewide” //enter “sitewide” for menu to persist across site, “local” for this page onlyif (document.getElementById){ //DynamicDrive.com change
+        document.write(‘<style type=”text/css”>n’)
+        document.write(‘.submenu{display: none;}n’)
+        document.write(‘</style>n’)
+        }function SwitchMenu(obj){
+        if(document.getElementById){
+        var el = document.getElementById(obj);
+        var ar = document.getElementById(“masterdiv”).getElementsByTagName(“span”); //DynamicDrive.com change
+        if(el.style.display != “block”){ //DynamicDrive.com change
+        for (var i=0; i<ar.length; i++){
+        if (ar[i].className==”submenu”) //DynamicDrive.com change
+        ar[i].style.display = “none”;
+        }
+        el.style.display = “block”;
+        }else{
+        el.style.display = “none”;
+        }
+        }
+        }function get_cookie(Name) {
+        var search = Name + “=”
+        var returnvalue = “”;
+        if (document.cookie.length > 0) {
+        offset = document.cookie.indexOf(search)
+        if (offset != -1) {
+        offset += search.length
+        end = document.cookie.indexOf(“;”, offset);
+        if (end == -1) end = document.cookie.length;
+        returnvalue=unescape(document.cookie.substring(offset, end))
+        }
+        }
+        return returnvalue;
+        }function onloadfunction(){
+        if (persistmenu==”yes”){
+        var cookiename=(persisttype==”sitewide”)? “switchmenu” : window.location.pathname
+        var cookievalue=get_cookie(cookiename)
+        if (cookievalue!=””)
+        document.getElementById(cookievalue).style.display=”block”
+        }
+        }function savemenustate(){
+        var inc=1, blockid=””
+        while (document.getElementById(“sub”+inc)){
+        if (document.getElementById(“sub”+inc).style.display==”block”){
+        blockid=”sub”+inc
+        break
+        }
+        inc++
+        }
+        var cookiename=(persisttype==”sitewide”)? “switchmenu” : window.location.pathname
+        var cookievalue=(persisttype==”sitewide”)? blockid+”;path=/” : blockid
+        document.cookie=cookiename+”=”+cookievalue
+        }if (window.addEventListener)
+        window.addEventListener(“load”, onloadfunction, false)
+        else if (window.attachEvent)
+        window.attachEvent(“onload”, onloadfunction)
+        else if (document.getElementById)
+        window.onload=onloadfunctionif (persistmenu==”yes” && document.getElementById)
+        window.onunload=savemenustate</script>
+        
     </head>
     <body  bgcolor="2db1e5"> 
-<h1 align="center"> Top 5 games, this is a fact. My name is Randy btw. I'm a 15 year old MALE who wants to become a software engineer. I guess you can say i'm a big boy ready to do big boy things 😎 </h1>   
-<hr width="75%" />
+   <h1 align="center"> Top 5 games, this is a fact. My name is Randy btw. I'm a 15 year old MALE who wants to become a software engineer. I guess you can say i'm a big boy ready to do big boy things 😎 </h1>
+   <hr width="75%" color="black" />
    <h4 align="center">  My top 5 games </h4>
    <p> 1: Red Dead Redemption 2 </p>
                 <img src="https://i.imgflip.com/2l76t2.jpg" alt="Author Morgan" width="300" border="1px">
@@ -18,8 +97,7 @@
                 <img src="https://fsmedia.imgix.net/d2/39/31/62/311c/4733/8ede/b7ab294d2894/kratos-can-sort-of-become-thanos-in-the-new-god-of-war.jpeg?rect=0%2C56%2C2047%2C1024&auto=format%2Ccompress&dpr=2&w=650" alt="Kratos" width="300" border="1px">
    <p> 5: Modern Warefare 2 </p>
         
-       <img src="https://gameranx.com/wp-content/uploads/2016/06/no-russian-1024x576.jpg" alt="Mw2" width="300 border="1px">
- 
+ <style> .shakeimage{ position:relative } </style> <script language=”JavaScript1.2″> var rector=3 var stopit=0 var a=1 function init(which){ stopit=0 shake=which shake.style.left=0 shake.style.top=0 } function rattleimage(){ if ((!document.all&&!document.getElementById)||stopit==1) return if (a==1){ shake.style.top=parseInt(shake.style.top)+rector } else if (a==2){ shake.style.left=parseInt(shake.style.left)+rector } else if (a==3){ shake.style.top=parseInt(shake.style.top)-rector } else{ shake.style.left=parseInt(shake.style.left)-rector } if (a<4) a++ else a=1 setTimeout(“rattleimage()”,50) } function stoprattle(which){ stopit=1 which.style.left=0 which.style.top=0 } </script> <img src=”https://gameranx.com/wp-content/uploads/2016/06/no-russian-1024x576.jpg” class=”shakeimage” onMouseover=”init(this);rattleimage()” onMouseout=”stoprattle(this);top.focus()” onClick=”top.focus()” width=”300″ height=”300″ border="1px"> 
         
         
         <a href="https://v-bucks.siterubix.com/">fortnite</a> </br>
