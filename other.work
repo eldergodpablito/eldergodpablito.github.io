@@ -1,4 +1,10 @@
-!: Rick and morty
+<html>
+<head>
+<title> My other work </title>
+<head>
+<body>
+
+1: Rick and morty
         <img src="https://www.bingeclock.com/memes/rick-and-morty___rick_morty_face_swap.jpg" alt="Rick and morty" width="300">
 2: Gravity Falls
         <img src=""Rick and morty" width="300">
@@ -8,3 +14,6 @@
         <img src="https://i.kinja-img.com/gawker-media/image/upload/s--u4IJ4NcZ--/c_scale,f_auto,fl_progressive,q_80,w_800/gflj7yg39wnsvzmodzh2.jpg"Cobra Kai" width="300">
 5: How I Met Your Mother
         <img src="https://i.ytimg.com/vi/7t9heX0YE7M/hqdefault.jpg"How I Met Your Mother" width="300">
+
+</body>
+</html>
